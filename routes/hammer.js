@@ -38,4 +38,18 @@ router.post('/add', async (req, res) => {
     res.redirect('/hammer/admin');
  })
 
+ router.get('/edit/:id', async (req, res) => {
+   var id = req.params.id;
+   var hammer = await HammerModel.findById(id);
+   res.render('hammer/edit', { hammer : hammer })
+})
+
+router.post('/edit/:id', async (req, res) => {
+   var id = req.params.id;
+   var hammer = req.body;
+   await HammerModel.findByIdAndUpdate(id, hammer);
+   console.log('Update toy succeed !');
+   res.redirect('/toy');
+})
+
 module.exports = router;

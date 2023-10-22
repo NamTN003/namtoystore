@@ -1,6 +1,5 @@
 var express = require('express');
 const UserModel = require('../models/UserModel');
-const ToyModel = require('../models/ToyModel');
 const SpindleModel = require('../models/SpindleModel');
 const HammerModel = require('../models/HammerModel');
 

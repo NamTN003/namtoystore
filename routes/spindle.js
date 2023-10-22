@@ -50,7 +50,7 @@ router.post('/edit/:id', async (req, res) => {
    var spindle = req.body;
    await SpindleModel.findByIdAndUpdate(id, spindle);
    console.log('Update toy succeed !');
-   res.redirect('spindle/admin');
+   res.redirect('/toy');
 })
 
   module.exports = router
