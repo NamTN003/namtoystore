@@ -1,0 +1,49 @@
+<section id="menu" class="menu">
+    <h1 class="heading">Spindle</h1>
+    <div class="box-container">
+        <div class="row">
+            {{#each spindles }}
+            <div class="col-md-4">
+                <a href="/spindle/detail/{{_id}}">
+                    <div class="image-container">
+                        <img src="{{ image }}" alt="{{ brand }}" width="300" height="300">
+                        <div class="overlay">
+                            <div class="text-pr">
+                                <h4>{{ brand }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <p>Price: {{ price }}VND</p>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+
+<section id="menu" class="menu">
+    <h1 class="heading">Hammer</h1>
+    <div class="box-container">
+        <div class="row">
+            {{#each hammer }}
+            <div class="col-md-4">
+                <a href="/hammer/detail/{{_id}}">
+                    <div class="image-container">
+                        <img src="{{ image }}" alt="{{ brand }}" width="300" height="300">
+                        <div class="overlay">
+                            <div class="text-pr">
+                                <h4>{{ brand }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <p>Price: {{ price }}VND</p>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+
+
